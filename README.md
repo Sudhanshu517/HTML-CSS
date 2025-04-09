@@ -1,27 +1,38 @@
-# HTML & CSS Projects
+# 🌐 HTML & CSS Projects Collection
 
-This repository contains a collection of HTML and CSS mini-projects and practice exercises. These projects are designed to reinforce fundamentals, explore layouts, improve responsiveness, and get comfortable with styling using pure HTML and CSS.
+This repository contains a collection of mini-projects and exercises built using **pure HTML and CSS**. These projects were created while learning and practicing front-end development fundamentals, layouts, and responsive design.
+
+---
 
 ## 📁 Project Structure
 
-Each folder is named and numbered for easy reference. Here are some examples:
+Each folder is numbered and contains a focused project or topic:
 
 - `01.Basic Structure` – HTML boilerplate setup
-- `05.CSS Flexbox` – Learning and practicing flex layouts
-- `15.CSS Grid` – Projects using CSS Grid
+- `05.CSS Flexbox` – Practice layouts using Flexbox
+- `15.CSS Grid` – Responsive grid layout examples
 - ...
-- `53.HTML,CSS PROJECT(NETFLIX  CLONE)` – A complete Netflix homepage clone using only HTML & CSS
+- `53.HTML,CSS PROJECT(NETFLIX  CLONE)` – A complete Netflix homepage clone using HTML & CSS
+
+> 🔗 The Netflix Clone is also available as a standalone repo with full README: [Netflix Clone Repo](https://github.com/YourUsername/netflix-clone-html-css)
+
+---
 
 ## ✅ Skills Covered
 
 - Semantic HTML5
-- CSS3 Styling
-- Flexbox & Grid Layouts
-- Media Queries for Responsiveness
-- Forms, Buttons, and Animations
+- CSS Styling and Selectors
+- Flexbox and Grid Layouts
+- Forms and Inputs
+- Media Queries & Responsive Design
+- Buttons, Transitions & Hover Effects
+
+---
 
 ## 🚀 Getting Started
 
-Clone the repository and open any project folder in your code editor or browser:
+To clone and explore all the projects locally:
+
 ```bash
-git clone https://github.com/YourUsername/HTML-CSS.git
+git clone https://github.com/Sudhanshu517/HTML-CSS
+cd HTML-CSS
