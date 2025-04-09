@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+    <style>
+        :root{
+            --color: darkgreen;
+            --seccolor: rgb(37, 158, 37);
+            --tercolor: lightgreen;
+            --color1: blue;
+            --seccolor1: rgb(37, 37, 124);
+            --tercolor1: lightblue;
+            --blackbdr: black;
+        }
+    
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .nav{
+           
+            width: 100vw;
+            position: sticky;
+            top: 0px;
+            /* top ko 0 krna is necessary to amke it sticky.  */
+           
+        }
+        .nav a{
+            text-decoration: none;
+           
+        }
+        ul{
+            display: flex;
+            background-color: var(--tercolor);
+        }
+        ul li{
+            padding: 12px;
+            margin: 14px;
+            list-style: none;
+            font-weight: bold;
+            
+        }
+        .boxes{
+            background-color: var(--color);
+            /* height: 150px; */
+            display: flex;
+            }
+        .boxes > .box1{
+         border: 2px solid var(--blackbdr);
+         height: 500px;
+         width: 600px;
+         padding: 5px;
+         margin: 50px;
+         background-color: var(--color1);
+         } 
+        .boxes > .box2{
+         border: 2px solid var(--blackbdr);
+         height: 500px;
+         width: 600px;
+         padding: 5px;
+         margin: 50px;
+         background-color: var(--seccolor1);
+        
+        } 
+        .ovalbox{
+            height: 330px;
+            border: 2px solid var(--blackbdr);
+            margin: 50px;
+            font-size: 90px;
+            border-radius: 50px;
+            text-align: center;
+           
+           
+           
+            
+            
+        }
+        
+        img{
+            border-radius: 150px;
+            
+            position: fixed;
+            right: 20px;
+            bottom: 10px;
+        }
+          .content{
+            
+            padding: 58px;
+         }
+         .footer{
+            width: 100vw;
+            height: 10vw;
+            background-color: var(--tercolor1);
+            border: 2px solid var(--blackbdr);
+         }
+            
+
+            
+           
+
+        
+            
+        
+    </style>
+</head>
+<body>
+    
+    <div class="nav">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About us</a></li>
+            <li><a href="/">Gear</a></li>
+            <li><a href="/">Work</a></li>
+            <li><a href="/">Contact</a></li>
+            
+        </ul>
+    </div>
+
+    <div class="boxes">
+        <div class="box1">I am box 1.</div>
+        <div class="box2">I am box 2.</div>
+    </div>
+    <div class="logo">
+        <img height="50" width="50" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiFSquvU5YxhomW0QqDJalWGW_56yr7ODGWw&s" alt="Web Image">
+    </div>
+   
+    <div class="ovalbox">
+        <div class="content">
+        Welcome to this Sigma Web Development Express.
+    </div>
+</div>
+<footer>
+    <div class="footer"></div>
+</footer>
+
+
+
+    
+</body>
+</html>

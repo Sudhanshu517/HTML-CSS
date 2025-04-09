@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        /* Flex properties applied to container not to individual items.  */
+        .container{
+            border: 2px solid red;  
+            display: flex;
+            height: 80vh;
+             /* justify-content: center; */
+              /* for horizontal alignment nahi but for main axis alignment i.e. depends on flex direction. */
+            align-items: center;    
+            /*for vertical alignment nahi but for cross axis alignment i.e. depends on flex direction.  */
+            /* flex-direction: column; */
+            flex-wrap: wrap;
+            /* align-content: normal;   */
+            /* Used for multiple lines of items. */
+            /* There is no justify items in flexbox.  */
+            flex-flow: row wrap;
+            /* gap: 30px 100px;
+            padding can not be used.
+             but can be used in grid items.  */
+            /* Caution:Log kya krte ki container ki property item mai daal dete aur item ki container so
+            avoid that mistake.  */
+        }
+        .item{
+            flex-grow: 1;
+            width: 92px;
+            height: 92px;
+            background-color: blueviolet;
+            border: 2px solid black;
+            margin: 4px;
+          }
+          .item1{
+            /* flex-grow: 2; */  
+            /* it take space of 2 items. */
+            flex-shrink: 2;
+            /* It is the ability of the item to shrink when required/necessary.  */
+            align-self: flex-end;
+            /* To align a single item if required.  */
+          }
+          .order-1{
+            order: 1;
+          }
+          .order-2{
+            order: 2;
+          }
+          .order-3{
+            order: 3;
+          }
+          /* order jitna jyada, element utna baad mai aayega. Default order is zero.  */
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item item1">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+           
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+           
+            
+            
+            
+           
+        </div>
+    </main>
+</body>
+</html>

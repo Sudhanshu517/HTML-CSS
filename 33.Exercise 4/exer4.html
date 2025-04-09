@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        :root{
+            --color: rgb(96, 238, 83);
+            --seccolor: rgb(172, 230, 170);
+            --tircolor: rgb(146, 230, 146);
+            --forcolor: rgb(0, 255, 13);
+            --fifcolor: rgb(99, 161, 99);
+        }
+        body{
+            background-color: violet;
+            
+           
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        @media screen and (max-width:455px){
+            body{
+                background-color: var(--color);
+            }
+        }
+        @media screen and (min-width:456px) and (max-width:767px){
+            body{
+                background-color: var(--seccolor);
+            }
+        }
+        @media screen and (min-width:768px) and (max-width:1024px){
+            body{
+                background-color: var(--tircolor);
+            }
+        }
+        @media screen and (min-width:1025px) and (max-width:1280px){
+            body{
+                background-color: var(--forcolor) ;
+            }
+        }
+        @media screen and (min-width:1281px) {
+            body{
+                background-color: var(--fifcolor) ;
+            }
+        }
+        
+        .container{
+            /* border: 2px solid pink; */
+            background-color: var(--color);
+            margin: 0;
+        }
+    ul{
+display: flex;
+padding: 0;
+
+
+    }
+ul li{
+    list-style:none ;
+    /* border: 2px solid rgb(221, 0, 37); */
+    padding: 20px;
+    /* margin: 4px; */
+    background-color: var(--color);
+    font-weight: bold;
+}
+ul li a{
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Course</a></li>
+                <li><a href="/">Tutorial</a> </li>
+                <li><a href="/">Notes</a></li>
+                <li><a href="/">Contact</a></li>
+                <li><a href="/">About Us</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

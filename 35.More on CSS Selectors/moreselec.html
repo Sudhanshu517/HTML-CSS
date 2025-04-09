@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* It means that ki agar .box apne parent ka first child h to ye apply kr do. */
+/* .box:first-child{
+    background-color: red;
+} */
+/* .box::first-line{
+    color: yellow;
+} */
+ /* .boxes *{
+    color: blue;
+    border: 2px solid black;
+ }
+ p, a, .box, [data-color="primary"]{
+    margin-top: 45px;
+    padding-top: 40px;
+ /* } */
+ /* .box:nth-child(odd){
+    background-color: blue;
+ } */ 
+ /* .box:nth-last-child(2){
+    background-color: yellow;
+ } */
+.boxes::before{
+    content: "Sid is Good.";
+    /* This is used a lot. */
+}
+.boxes::after{
+    content: "Sigma course is also Good.";
+    color: red;
+    /* This is used a lot.  */
+}
+::selection{
+    color: aqua;
+    background-color: black;
+}
+.box::first-letter{
+    color: peru;
+    font-size: 45px;
+}
+input::placeholder{
+    color: rgba(38, 38, 44, 0.281);
+   
+}
+</style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Hey I am a box.</div>
+        <div class="box">Hey I am a box.</div>
+        <div class="box">Hey I am a box.</div>
+        <input type="text" placeholder="Type Your Name Here">
+    </div>
+</body>
+</html>
